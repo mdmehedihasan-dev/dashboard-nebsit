@@ -4,8 +4,11 @@ A modern HR/employee management front-end built with Vite + React and Tailwind C
 
 ## Overview
 
-This repository contains a single-page React application scaffolded with Vite, using Tailwind CSS for styling. It includes components, routes, API utilities, and feature slices for an HR dashboard (attendance, payroll, notice board, employee management, etc.).
+NEBS-IT Dashboard is a modern HR and employee management front-end application developed using Vite, React, and Tailwind CSS. The project focuses on building a clean, responsive, and scalable UI for managing organizational workflows such as employee information, attendance, payroll, and internal notices.
 
+A key feature of this application is the **Notice Management module**, where administrators can create, publish, and manage notices through an intuitive interface. The system includes form validation, notice type selection, status control (published/unpublished), and paginated notice listings, all integrated with backend APIs.
+
+The application follows a modular architecture with reusable components, centralized API handling, protected routes, and state management, ensuring maintainability and performance. It is designed to easily scale as additional HR features are introduced.
 ## Tech Stack
 
 - React (via Vite)
