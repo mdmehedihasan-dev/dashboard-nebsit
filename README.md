@@ -2,6 +2,8 @@
 
 A modern HR/employee management front-end built with Vite + React and Tailwind CSS.
 
+🔗 Live API URL: https://dashboard-nebsit.vercel.app
+
 ## Overview
 
 NEBS-IT Dashboard is a modern HR and employee management front-end application developed using Vite, React, and Tailwind CSS. The project focuses on building a clean, responsive, and scalable UI for managing organizational workflows such as employee information, attendance, payroll, and internal notices.
@@ -79,18 +81,17 @@ Contributions are welcome. Please open issues for bugs or feature requests, and 
 
 This project does not include a license file in the repository. Add a `LICENSE` file if you wish to open-source under a specific license.
 
-## Contact
 
-If you need help running the project or want improvements to the README, open an issue or reach out in the repository.
-## Contact
+👤 Author
 
-Md Mehedi Hasan  
-Full Stack Developer (Mern Stack)
+Md Mehedi Hasan
 
-GitHub: https://github.com/mdmehedihasan-dev  
-Phone: 01703946056
-Email: mdmehedihasandev0@gmail.com 
+Full Stack Developer (MERN Stack)
+
+GitHub: https://github.com/mdmehedihasan-dev
+
 LinkedIn: https://www.linkedin.com/in/mdmehedihasanmr
-Location: Dhaka, Bangladesh  
 
-For project-related questions, bug reports, or collaboration opportunities, please feel free to get in touch.
+Email: mdmehedihasandev0@gmail.com
+
+Location: Benarosi Polli, Mirpur 10, Dhaka.
