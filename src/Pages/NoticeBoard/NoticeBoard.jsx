@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Upload, X,  } from "lucide-react";
+import { Link, Upload, X,  } from "lucide-react";
 import { useCreateNoticeMutation } from "../../features/api/noticesApi";
 import { LuSquareArrowLeft } from "react-icons/lu";
 import { FaCheck, FaPlus } from "react-icons/fa";
 import { message } from "antd";
 import { MdFilePresent } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const NoticeBoard = () => {
   const [createNotice, { isLoading, isError, error }] =
@@ -28,6 +29,7 @@ const NoticeBoard = () => {
   const [publishedNoticeTitle, setPublishedNoticeTitle] = useState("");
   const [validationErrors, setValidationErrors] = useState({});
   const fileInputRef = React.useRef(null);
+  const navigate = useNavigate();
 
   const noticeCategories = [
     "Warning / Disciplinary",
@@ -569,20 +571,24 @@ const NoticeBoard = () => {
                 Your notice "{publishedNoticeTitle}" has been published and is
                 now visible to all selected departments.
               </p>
-              <div className="flex w-full gap-3">
-                <button className="flex-1 px-4 py-1 text-[#3B82F6] transition-colors border border-[#3B82F6] rounded-full hover:bg-gray-50">
+              <div className="flex flex-col w-full gap-1 md:flex-1 md:gap-3">
+                <button 
+                  onClick={() => navigate("/employee-database")}
+                className="flex-1 px-2 md:px-4 py-1 text-[#3B82F6] transition-colors border border-[#3B82F6] rounded-full hover:bg-gray-50">
+                
                   View Notice
+               
                 </button>
                 <button
                   onClick={handleCreateAnother}
-                  className="flex items-center px-4 py-1 text-orange-500 transition-colors border border-orange-500 rounded-full gap-x-2 hover:bg-orange-50"
+                  className="flex items-center justify-center px-2 py-1 text-orange-500 transition-colors border border-orange-500 rounded-full md:px-4 gap-x-2 hover:bg-orange-50"
                 >
                   <FaPlus />
                   <span>Create Another</span>
                 </button>
                 <button
                   onClick={handleCloseSuccess}
-                  className="flex-1 px-4 py-1 text-[#232948] transition-colors border border-[#232948] rounded-full hover:bg-gray-50"
+                  className="flex-1 px-2 md:px-4 py-1 text-[#232948] transition-colors border border-[#232948] rounded-full hover:bg-gray-50"
                 >
                   Close
                 </button>
