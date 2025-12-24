@@ -571,7 +571,7 @@ const NoticeBoard = () => {
                 Your notice "{publishedNoticeTitle}" has been published and is
                 now visible to all selected departments.
               </p>
-              <div className="flex flex-col w-full gap-1 md:flex-1 md:gap-3">
+              <div className="flex flex-col w-full gap-1 md:flex-row md:flex-1 md:gap-3">
                 <button 
                   onClick={() => navigate("/employee-database")}
                 className="flex-1 px-2 md:px-4 py-1 text-[#3B82F6] transition-colors border border-[#3B82F6] rounded-full hover:bg-gray-50">
